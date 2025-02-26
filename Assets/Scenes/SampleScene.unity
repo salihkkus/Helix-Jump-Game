@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 266450506}
   - component: {fileID: 266450505}
   - component: {fileID: 266450504}
+  - component: {fileID: 266450509}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -799,6 +800,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &266450509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266450503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d836d1e3ac99d4195b7b9cc80787ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 266450504}
+  JumpForce: 140
 --- !u!1001 &299198150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1063,6 +1078,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1188,6 +1204,18 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efa96644011c4374b8ff341492717ce3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &361381537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1326,6 +1354,7 @@ GameObject:
   - component: {fileID: 387934214}
   - component: {fileID: 387934213}
   - component: {fileID: 387934212}
+  - component: {fileID: 387934216}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1427,6 +1456,19 @@ Transform:
   - {fileID: 25995273}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &387934216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387934211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093f4b4f5d9f2b2489f783dc3af6ec8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 50
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
