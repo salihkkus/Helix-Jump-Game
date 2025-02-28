@@ -14,5 +14,8 @@ public class Ball : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         rb.AddForce(Vector3.up * JumpForce);
+
+        string MaterialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
+        Debug.Log(MaterialName);
     }
 }
