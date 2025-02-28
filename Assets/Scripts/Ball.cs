@@ -17,5 +17,19 @@ public class Ball : MonoBehaviour
 
         string MaterialName = other.gameObject.GetComponent<MeshRenderer>().material.name;
         Debug.Log(MaterialName);
+
+        if(MaterialName == "SafeColor (Instance)")
+        {
+            //get points
+        }
+        else if(MaterialName == "UnsafeColor (Instance)")
+        {
+            //restart game
+            Debug.Log("game over");
+        }
+        else if(MaterialName == "Last Ring (Instance)")
+        {
+            //skip next level
+        }
     }
 }
